@@ -19,6 +19,10 @@
       platformStr = "osx-arm64";
       hash = "sha512-MDuyFxtjlojXyrOdgJxVY3IDMLnrDvA4rO7ujOlE5KH082GXfonNOFZSpa64M8jMPJhJ4sopHKgZVvKKygzjPg==";
     };
+    "x86_64-darwin" = {
+      platformStr = "osx-x64";
+      hash = "sha512-fD48QFYIzq3/EvZR3o3VFCxIz3VZGSDJUo/ZwfZnFu7xt/xkQSBL+2zXOh9XZaBg42Xq3x9eFZQ00V8AbqJdKA==";
+    };
     "x86_64-linux" = {
       platformStr = "linux-x64";
       hash = "sha512-PhgS2ivRn8Yhlr7+gbQd+rGSMDLGsxURh8lOE30Xk7zEubukjekxDsaPqM1tOS95k7TWM9xXyVVfmsJplrl+nw==";
@@ -89,6 +93,6 @@ in
       ];
       license = licenses.mit;
       maintainers = with maintainers; [];
-      platforms = ["x86_64-linux" "aarch64-darwin"];
+      platforms = ["x86_64-linux" "aarch64-darwin" "x86_64-darwin"];
     };
   }
